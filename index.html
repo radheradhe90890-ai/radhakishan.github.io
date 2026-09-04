@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhakishan | Personal Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f7fb;color:#1f2937}
+nav{position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#07152e;color:white}
+.logo{font-size:25px;font-weight:bold} .logo span{display:block;font-size:12px;font-weight:normal;color:#60a5fa}
+nav ul{display:flex;list-style:none;gap:28px} nav ul li a{color:white;text-decoration:none;font-size:15px}
+nav ul li a:hover{color:#60a5fa}
+.hero{min-height:620px;display:flex;justify-content:space-between;align-items:center;padding:70px 10%;background:linear-gradient(135deg,#06142e,#0b2855);color:white}
+.hero-text{max-width:600px} .hello{color:#3b9cff;font-size:20px}
+.hero h1{font-size:58px;margin:15px 0} .hero h2{color:#3b9cff;font-size:22px;margin-bottom:20px}
+.hero p{line-height:1.7;color:#dbeafe} .buttons{margin-top:30px}
+.btn{display:inline-block;padding:13px 24px;margin-right:10px;border-radius:7px;text-decoration:none;font-weight:bold}
+.primary{background:#1677ff;color:white} .secondary{border:1px solid white;color:white}
+.btn:hover{transform:translateY(-2px)}
+.profile-photo{width:280px;height:280px;border-radius:50%;border:5px solid #1683ff;overflow:hidden;background:#17365f;box-shadow:0 0 25px rgba(22,131,255,.35)}
+.profile-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+section{padding:70px 9%} .section-title{text-align:center;font-size:35px;margin-bottom:40px}
+.about-box{max-width:900px;margin:auto;background:white;padding:35px;border-radius:15px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.about-box p{line-height:1.8;margin-bottom:15px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:auto}
+.skill{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.07)} .skill h3{margin-bottom:12px}
+.bar{height:8px;background:#e5e7eb;border-radius:10px} .bar span{display:block;height:100%;background:#1677ff;border-radius:10px}
+.experience{max-width:900px;margin:auto} .job{background:white;padding:25px;margin-bottom:20px;border-left:5px solid #1677ff;box-shadow:0 5px 20px rgba(0,0,0,.07)}
+.job h3{color:#1677ff;margin-bottom:8px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .project{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.project h3{margin-bottom:12px} .project a{display:inline-block;margin-top:18px;color:#1677ff;text-decoration:none;font-weight:bold}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px} .gallery-box{height:180px;display:flex;align-items:center;justify-content:center;background:#dbeafe;border-radius:12px;color:#1e40af;font-weight:bold}
+.contact{max-width:700px;margin:auto;background:white;padding:35px;border-radius:15px;box-shadow:0 5px 25px rgba(0,0,0,.08)} .contact p{margin:18px 0;font-size:17px}
+footer{background:#07152e;color:white;text-align:center;padding:30px}
+@media(max-width:800px){
+nav{flex-direction:column;gap:15px} nav ul{gap:12px;flex-wrap:wrap;justify-content:center}
+.hero{flex-direction:column;text-align:center;gap:50px} .hero h1{font-size:42px}
+.skills,.projects,.gallery{grid-template-columns:1fr} .profile-photo{width:220px;height:220px}
+}
 
+.gallery-box {
+    height: 260px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #dbeafe;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.gallery-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-box:hover img {
+    transform: scale(1.04);
+}
+
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">Radhakishan<span>Personal Portfolio</span></div>
+<ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-text">
+<div class="hello">Hello, I'm</div>
+<h1>Radhakishan</h1>
+<h2>Audit & Banking Professional<br>Web Design Learner</h2>
+<p>Welcome to my personal website. I am interested in Audit, Banking, Computer and Web Design.</p>
+<div class="buttons"><a href="#contact" class="btn primary">Contact Me</a><a href="#projects" class="btn secondary">My Projects</a></div>
+</div>
+<div class="profile-photo">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAYAArADASIAAhEBAxEB/8QAHgAAAAcBAQEBAAAAAAAAAAAAAQIDBAUGBwAICQ/xABDEAABAwMEAQQBAwMDAgUCAgsBAAIDBAURBhIhMUEHEyJRYRQycQgjgRVCkVKhFiQzYrEJwSU0ctEXNUNTgv atmospheric factors have been removed for brevity... " alt="Radhakishan">
+</div>
+</section>
+
+<section id="about"><h2 class="section-title">About Me</h2><div class="about-box">
+<p>Hello, I am Radhakishan.</p><p>I am interested in Banking, Audit, Computer and Web Design.</p><p>I am continuously learning new skills and working towards my career goals.</p>
+</div></section>
+
+<section id="skills"><h2 class="section-title">My Skills</h2><div class="skills">
+<div class="skill"><h3>MS Office</h3><div class="bar"><span style="width:85%"></span></div></div>
+<div class="skill"><h3>Audit & Verification</h3><div class="bar"><span style="width:80%"></span></div></div>
+<div class="skill"><h3>Banking Knowledge</h3><div class="bar"><span style="width:80%"></span></div></div>
+<div class="skill"><h3>HTML</h3><div class="bar"><span style="width:70%"></span></div></div>
+<div class="skill"><h3>CSS</h3><div class="bar"><span style="width:60%"></span></div></div>
+<div class="skill"><h3>JavaScript</h3><div class="bar"><span style="width:40%"></span></div></div>
+</div></section>
+
+<section id="experience"><h2 class="section-title">Experience</h2><div class="experience">
+<div class="job"><h3>Audit Preparation</h3><p>Working on audit preparation, verification and coordination work.</p></div>
+<div class="job"><h3>SBI Experience</h3><p>Banking-related work and customer assistance experience.</p></div>
+<div class="job"><h3>Flipkart Experience</h3><p>Experience in Flipkart delivery/hub operations.</p></div>
+</div></section>
+
+<section id="projects"><h2 class="section-title">My Projects</h2><div class="projects">
+<div class="project"><h3>Personal Portfolio</h3><p>My personal portfolio website created using HTML and CSS.</p><a href="#">View Project →</a></div>
+<div class="project"><h3>Company Website</h3><p>A professional website concept for Daksh Enterprises.</p><a href="#">View Project →</a></div>
+<div class="project"><h3>Web Design Projects</h3><p>More web design projects will be added here.</p><a href="#">View Project →</a></div>
+</div></section>
+
+<section id="gallery"><h2 class="section-title">Gallery</h2><div class="gallery">
+<div class="gallery-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA... " alt="Gallery Photo 1"></div>
+</div></section>
+
+<section id="contact"><h2 class="section-title">Contact Me</h2><div class="contact">
+<p>Feel free to reach out for projects, audit assistance, or web design inquiries.</p>
+</div></section>
+
+<footer>
+<p>© 2026 Radhakishan. All rights reserved.</p>
+</footer>
+</body>
+</html>
